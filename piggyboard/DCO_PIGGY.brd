@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -416,12 +416,20 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="OUT" pad="2"/>
 <contactref element="P1" pad="1"/>
 <contactref element="P2" pad="1"/>
-<polygon width="0.254" layer="16">
-<vertex x="1" y="21"/>
-<vertex x="1" y="1"/>
-<vertex x="99" y="1"/>
-<vertex x="99" y="21"/>
+<polygon width="0.254" layer="16" isolate="0.254">
+<vertex x="0" y="22"/>
+<vertex x="0" y="0"/>
+<vertex x="100" y="0"/>
+<vertex x="100" y="22"/>
 </polygon>
+<polygon width="0.254" layer="1" isolate="0.254">
+<vertex x="0" y="22"/>
+<vertex x="0" y="0"/>
+<vertex x="100" y="0"/>
+<vertex x="100" y="22"/>
+</polygon>
+<wire x1="93.27" y1="19.27" x2="93.27" y2="14.57" width="0.254" layer="1"/>
+<wire x1="93.27" y1="14.57" x2="91" y2="12.3" width="0.254" layer="1"/>
 </signal>
 <signal name="OUT">
 <contactref element="PIGGY" pad="2"/>
@@ -515,11 +523,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="42" y1="13" x2="42" y2="12.75" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
-<polygon width="0.254" layer="1">
-<vertex x="1" y="21"/>
-<vertex x="1" y="1"/>
-<vertex x="99" y="1"/>
-<vertex x="99" y="21"/>
+<polygon width="0.254" layer="16" isolate="0.254">
+<vertex x="0" y="22"/>
+<vertex x="0" y="0"/>
+<vertex x="100" y="0"/>
+<vertex x="100" y="22"/>
 </polygon>
 </signal>
 </signals>
