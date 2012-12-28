@@ -1,0 +1,48 @@
+Partlist exported from /Users/russruss/proj/hardware/synth/dco/mainboard/DCO.sch at 12/28/12 10:00 AM
+
+Assembly variant: 
+
+Part  Value          Device              Package   Description                                                                   
+C101  220pF          CAP0603-CAP         0603-CAP  Capacitor                                                                     
+C102  .1uF           CAP0805             0805      Capacitor                                                                     
+C103  1uF            CAP0805             0805      Capacitor                                                                     
+C301  1uF            CAP0603-CAP         0603-CAP  Capacitor                                                                     
+C302  .1uF           CAP0603-CAP         0603-CAP  Capacitor                                                                     
+C303  .1uF           CAP0603-CAP         0603-CAP  Capacitor                                                                     
+C304  10uF           CAP_POL1206         EIA3216   Capacitor Polarized                                                           
+C305  .1uF           CAP0603-CAP         0603-CAP  Capacitor                                                                     
+D301  5V             DIODE-ZENER-BZT52   SOD-323   Zener Diode                                                                   
+D302  5V             DIODE-ZENER-BZT52   SOD-323   Zener Diode                                                                   
+H1    PDI            AVR_PDI_6           AVR_ISP_6                                                                               
+IC101 LF353D         LF353D              SO08      OP AMP                                                                        
+IC201 LF353D         LF353D              SO08      OP AMP                                                                        
+IC301                V_REG_MIC2920       SOT223    MIC2920A (http://www.micrel.com/_PDF/mic2920.pdf) - 400mA output LDO Regulator
+J3                   M04X2               2X4                                                                                     
+P101  TRIMPOT 100K   TRIMPOT             3362U-2                                                                                 
+POWER POWER_SIMPLE16 POWER_SIMPLE16      POWER_16                                                                                
+Q101                 TRANSISTOR_NPNSOT23 SOT23     Transistor NPN                                                                
+R101  10K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R102  3.9            RESISTOR0805-RES    0805      Resistor                                                                      
+R103  200K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R104  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R105  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R106  1M             RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R107  10K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R108  10K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R109  300K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R110  1K             RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R201  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R202  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R203  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R204  1.5M           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R205  27K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R206  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R207  50K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R208  33K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R209  33K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R301  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+R302  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
+U1    XMEGA-A4VQFN   XMEGA-A4VQFN        QFN44     Atmel XMega A4 series processor                                               
+
+3x erthenvar jacks
+3x 100KB PDB12 pots
