@@ -1,48 +1,44 @@
-Partlist exported from /Users/russruss/proj/hardware/synth/dco/mainboard/DCO.sch at 12/28/12 10:00 AM
-
-Assembly variant: 
-
-Part  Value          Device              Package   Description                                                                   
-C101  220pF          CAP0603-CAP         0603-CAP  Capacitor                                                                     
-C102  .1uF           CAP0805             0805      Capacitor                                                                     
-C103  1uF            CAP0805             0805      Capacitor                                                                     
-C301  1uF            CAP0603-CAP         0603-CAP  Capacitor                                                                     
-C302  .1uF           CAP0603-CAP         0603-CAP  Capacitor                                                                     
-C303  .1uF           CAP0603-CAP         0603-CAP  Capacitor                                                                     
-C304  10uF           CAP_POL1206         EIA3216   Capacitor Polarized                                                           
-C305  .1uF           CAP0603-CAP         0603-CAP  Capacitor                                                                     
-D301  5V             DIODE-ZENER-BZT52   SOD-323   Zener Diode                                                                   
-D302  5V             DIODE-ZENER-BZT52   SOD-323   Zener Diode                                                                   
-H1    PDI            AVR_PDI_6           AVR_ISP_6                                                                               
-IC101 LF353D         LF353D              SO08      OP AMP                                                                        
-IC201 LF353D         LF353D              SO08      OP AMP                                                                        
-IC301                V_REG_MIC2920       SOT223    MIC2920A (http://www.micrel.com/_PDF/mic2920.pdf) - 400mA output LDO Regulator
-J3                   M04X2               2X4                                                                                     
-P101  TRIMPOT 100K   TRIMPOT             3362U-2                                                                                 
-POWER POWER_SIMPLE16 POWER_SIMPLE16      POWER_16                                                                                
-Q101                 TRANSISTOR_NPNSOT23 SOT23     Transistor NPN                                                                
-R101  10K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R102  3.9            RESISTOR0805-RES    0805      Resistor                                                                      
-R103  200K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R104  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R105  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R106  1M             RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R107  10K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R108  10K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R109  300K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R110  1K             RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R201  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R202  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R203  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R204  1.5M           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R205  27K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R206  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R207  50K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R208  33K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R209  33K            RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R301  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-R302  100K           RESISTOR0603-RES    0603-RES  Resistor                                                                      
-U1    XMEGA-A4VQFN   XMEGA-A4VQFN        QFN44     Atmel XMega A4 series processor                                               
-
+Connectors:
+1x MO4x2         Connection header
+1x M04x2  female Connection jack
+1x MO3x2     AVR PDI header
+1x MO8x2     Eurorack power connector
 3x erthenvar jacks
-3x 100KB PDB12 pots
+
+Semiconductors
+1x QFN44     Atmel XMega A4U series processor (U1)
+1x SOT23     MMBT3904 NPN Transistor          (Q101)
+1x SOT223    MIC2920A-3.3BS regulator         (IC301)
+2x SOIC-8    LF343N op amp                    (IC101, IC201)
+2x SOD-123   5V zener diode                   (D301, D301)
+
+Potentiometers
+3x PDB12 100K PCB mount panel pot (PDB12-H4251-104BF)
+1x 5mm   100K thru-hole trimpot (N6-L50T0C-100K)
+
+Resistors
+1x 0805 3.9  Resistor 5% (R102)
+1x 0603 1K   Resistor 5% (R110)
+3x 0603 10K  Resistor 5% (R101, R107, R108)
+1x 0603 27K  Resistor 5% (R205)
+1x 0603 33K  Resistor 5% (R208)
+1x 0603 33K  Resistor 1% (R209)
+1x 0603 51K  Resistor 1% (R207)
+7x 0603 100K Resistor 5% (R104, R105, R202, R203, R206, R301, R302)
+1x 0603 100K Resistor 1% (R201)
+1x 0603 200K Resistor 5% (R103)
+1x 0603 300K Resistor 5% (R109)
+1x 0603 1M   Resistor 5% (R106)
+1x 0603 1.5M Resistor 5% (R204)
+
+Capacitors
+1x 0603 220pF C0G capacitor      (C101)
+3x 0603 .1uF  X7R capacitor      (C302, C303, C305)
+1x 1210 .1uF  PPS capacitor      (C102)
+2x 0805 1uF   X7R capacitor      (C103, C301) 
+1x 1205 10uF  X5R capacitor      (C304)
+
+
+Other TODOs- 
+Make sure C103 does not have too much distortion during testing
+
