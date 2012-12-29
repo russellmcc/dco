@@ -2669,7 +2669,7 @@ NS Package M08A</description>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="R109" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="300K"/>
 <part name="R110" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="1K"/>
-<part name="P101" library="SparkFun" deviceset="TRIMPOT" device="PTH" value="TRIMPOT 100K"/>
+<part name="P101" library="SparkFun" deviceset="TRIMPOT" device="" value="TRIMPOT 100K"/>
 <part name="TP101" library="SparkFun" deviceset="M01" device="PTH" value=""/>
 <part name="TP102" library="SparkFun" deviceset="M01" device="PTH" value=""/>
 <part name="TP104" library="SparkFun" deviceset="M01" device="PTH" value=""/>
