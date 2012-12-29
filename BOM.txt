@@ -42,3 +42,5 @@ Capacitors
 Other TODOs- 
 Make sure C103 does not have too much distortion during testing
 
+Mouser link to project:
+http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=1daa500807
