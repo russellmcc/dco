@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2669,7 +2669,7 @@ NS Package M08A</description>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="R109" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="300K"/>
 <part name="R110" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="1K"/>
-<part name="P101" library="SparkFun" deviceset="TRIMPOT" device="" value="TRIMPOT 100K"/>
+<part name="P101" library="SparkFun" deviceset="TRIMPOT" device="PTH" value="TRIMPOT 100K"/>
 <part name="TP101" library="SparkFun" deviceset="M01" device="PTH" value=""/>
 <part name="TP102" library="SparkFun" deviceset="M01" device="PTH" value=""/>
 <part name="TP104" library="SparkFun" deviceset="M01" device="PTH" value=""/>
