@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -623,8 +623,7 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="25.4" y1="91.44" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="78.74" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="76.2" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="63.5" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="60.96" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="63.5" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="50.8" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="91.44" x2="25.4" y2="91.44" width="0.1524" layer="91"/>
 <junction x="25.4" y="91.44"/>
@@ -637,9 +636,6 @@ Standard 8.5x11 US Letter frame</description>
 <pinref part="OUT" gate="G$1" pin="RING"/>
 <wire x1="20.32" y1="63.5" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
 <junction x="25.4" y="63.5"/>
-<pinref part="OUT" gate="G$1" pin="NORM"/>
-<wire x1="20.32" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
-<junction x="25.4" y="60.96"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="P1" gate="G$1" pin="A"/>
 <wire x1="48.26" y1="55.88" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
@@ -662,6 +658,9 @@ Standard 8.5x11 US Letter frame</description>
 <pinref part="OUT" gate="G$1" pin="TIP"/>
 <wire x1="20.32" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
 <label x="33.02" y="55.88" size="1.778" layer="95"/>
+<pinref part="OUT" gate="G$1" pin="NORM"/>
+<wire x1="20.32" y1="60.96" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<junction x="20.32" y="55.88"/>
 </segment>
 </net>
 <net name="CV_IN" class="0">

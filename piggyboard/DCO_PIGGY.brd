@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -221,7 +221,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -413,23 +413,21 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="AUX_IN" pad="2"/>
 <contactref element="OUT" pad="1@1"/>
 <contactref element="OUT" pad="1@2"/>
-<contactref element="OUT" pad="2"/>
 <contactref element="P1" pad="1"/>
 <contactref element="P2" pad="1"/>
-<polygon width="0.254" layer="16" isolate="0.254">
-<vertex x="0" y="22"/>
-<vertex x="0" y="0"/>
-<vertex x="100" y="0"/>
-<vertex x="100" y="22"/>
-</polygon>
 <polygon width="0.254" layer="1" isolate="0.254">
 <vertex x="0" y="22"/>
 <vertex x="0" y="0"/>
 <vertex x="100" y="0"/>
 <vertex x="100" y="22"/>
 </polygon>
-<wire x1="93.27" y1="19.27" x2="93.27" y2="14.57" width="0.254" layer="1"/>
-<wire x1="93.27" y1="14.57" x2="91" y2="12.3" width="0.254" layer="1"/>
+<via x="98.298" y="18.542" extent="1-16" drill="0.6" shape="square"/>
+<polygon width="0.254" layer="16">
+<vertex x="0" y="22"/>
+<vertex x="0" y="0"/>
+<vertex x="100" y="0"/>
+<vertex x="100" y="22"/>
+</polygon>
 </signal>
 <signal name="OUT">
 <contactref element="PIGGY" pad="2"/>
@@ -439,6 +437,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="84" y1="19" x2="84" y2="4" width="0.254" layer="16"/>
 <wire x1="84" y1="4" x2="91" y2="4" width="0.254" layer="16"/>
 <wire x1="91" y1="4.1" x2="91" y2="4" width="0.254" layer="16"/>
+<contactref element="OUT" pad="2"/>
+<wire x1="91" y1="12.3" x2="91" y2="4.1" width="0.254" layer="16"/>
 </signal>
 <signal name="CV_IN">
 <contactref element="PIGGY" pad="1"/>
@@ -495,11 +495,12 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="COARSE">
 <contactref element="PIGGY" pad="5"/>
 <contactref element="P2" pad="2"/>
-<wire x1="93.27" y1="16.73" x2="93.22" y2="15.22" width="0.254" layer="1"/>
-<wire x1="93.22" y1="15.22" x2="93" y2="15" width="0.254" layer="1"/>
-<wire x1="93" y1="15" x2="85" y2="15" width="0.254" layer="1"/>
-<wire x1="85" y1="15" x2="85" y2="9" width="0.254" layer="1"/>
-<wire x1="85" y1="9" x2="82" y2="9" width="0.254" layer="1"/>
+<wire x1="82" y1="9" x2="82" y2="9.864" width="0.254" layer="1"/>
+<wire x1="82" y1="9.864" x2="87.122" y2="14.986" width="0.254" layer="1"/>
+<wire x1="87.122" y1="14.986" x2="91.694" y2="14.986" width="0.254" layer="1"/>
+<wire x1="91.694" y1="14.986" x2="92.964" y2="16.256" width="0.254" layer="1"/>
+<wire x1="92.964" y1="16.256" x2="92.964" y2="16.424" width="0.254" layer="1"/>
+<wire x1="92.964" y1="16.424" x2="93.27" y2="16.73" width="0.254" layer="1"/>
 </signal>
 <signal name="FINE">
 <contactref element="PIGGY" pad="7"/>
@@ -521,14 +522,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="38" y1="12" x2="39" y2="13" width="0.254" layer="1"/>
 <wire x1="39" y1="13" x2="42" y2="13" width="0.254" layer="1"/>
 <wire x1="42" y1="13" x2="42" y2="12.75" width="0.254" layer="1"/>
-</signal>
-<signal name="N$1">
-<polygon width="0.254" layer="16" isolate="0.254">
-<vertex x="0" y="22"/>
-<vertex x="0" y="0"/>
-<vertex x="100" y="0"/>
-<vertex x="100" y="22"/>
-</polygon>
 </signal>
 </signals>
 </board>
