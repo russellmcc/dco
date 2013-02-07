@@ -9,7 +9,7 @@ Semiconductors
 1x QFN44     Atmel XMega A4U series processor (U1)
 1x SOT23     MMBT3904 NPN Transistor          (Q101)
 1x SOT223    MIC2920A-3.3BS regulator         (IC301)
-2x SOIC-8    LF353N op amp                    (IC101, IC201)
+2x SOIC-8    LF353D op amp                    (IC101, IC201)
 2x SOD-123   5V zener diode                   (D301, D301)
 
 Potentiometers
@@ -43,4 +43,4 @@ Other TODOs-
 Make sure C103 does not have too much distortion during testing
 
 Mouser link to project:
-http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=1daa500807
+http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=1daa500807     
