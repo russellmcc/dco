@@ -170,22 +170,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="3.556" y1="-1.524" x2="4.064" y2="-1.016" layer="51"/>
 </package>
 <package name="PDB12">
-<pad name="2" x="0" y="-5" drill="1" shape="square"/>
-<pad name="3" x="3.75" y="-5" drill="1" shape="square"/>
-<pad name="1" x="-3.75" y="-5" drill="1" shape="square"/>
-<pad name="P$4" x="5.05" y="5" drill="2.7" shape="square" rot="R90"/>
-<pad name="P$5" x="-5.05" y="5" drill="2.7" shape="square" rot="R90"/>
-<wire x1="-7" y1="-6" x2="7" y2="-6" width="0.127" layer="21"/>
-<wire x1="7" y1="-6" x2="7" y2="12" width="0.127" layer="21"/>
-<wire x1="7" y1="12" x2="-7" y2="12" width="0.127" layer="21"/>
-<wire x1="-7" y1="12" x2="-7" y2="-6" width="0.127" layer="21"/>
-<text x="-3" y="9" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-5.08" y1="-6.35" x2="-7.62" y2="-6.35" width="0.2032" layer="51"/>
-<wire x1="-7.62" y1="-6.35" x2="-7.62" y2="11.43" width="0.2032" layer="51"/>
-<wire x1="-7.62" y1="11.43" x2="7.62" y2="11.43" width="0.2032" layer="51"/>
-<wire x1="7.62" y1="11.43" x2="7.62" y2="-6.35" width="0.2032" layer="51"/>
-<wire x1="7.62" y1="-6.35" x2="5.08" y2="-6.35" width="0.2032" layer="51"/>
+<pad name="2" x="0" y="-10" drill="1" shape="square"/>
+<pad name="3" x="3.75" y="-10" drill="1" shape="square"/>
+<pad name="1" x="-3.75" y="-10" drill="1" shape="square"/>
+<pad name="P$4" x="5.05" y="0" drill="2.7" shape="square" rot="R90"/>
+<pad name="P$5" x="-5.05" y="0" drill="2.7" shape="square" rot="R90"/>
+<wire x1="-7" y1="-11" x2="7" y2="-11" width="0.127" layer="21"/>
+<wire x1="7" y1="-11" x2="7" y2="7" width="0.127" layer="21"/>
+<wire x1="7" y1="7" x2="-7" y2="7" width="0.127" layer="21"/>
+<wire x1="-7" y1="7" x2="-7" y2="-11" width="0.127" layer="21"/>
+<text x="-3" y="4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-8" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-5.08" y1="-11.35" x2="-7.62" y2="-11.35" width="0.2032" layer="51"/>
+<wire x1="-7.62" y1="-11.35" x2="-7.62" y2="6.43" width="0.2032" layer="51"/>
+<wire x1="-7.62" y1="6.43" x2="7.62" y2="6.43" width="0.2032" layer="51"/>
+<wire x1="7.62" y1="6.43" x2="7.62" y2="-11.35" width="0.2032" layer="51"/>
+<wire x1="7.62" y1="-11.35" x2="5.08" y2="-11.35" width="0.2032" layer="51"/>
 </package>
 </packages>
 </library>
@@ -398,9 +398,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="CV_IN" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="7" y="9"/>
 <element name="AUX_IN" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="19" y="9"/>
 <element name="OUT" library="erthenvar" package="ERTHENVAR-JACK" value="AUDIO-JACKERTHENVAR" x="91" y="9" rot="R180"/>
-<element name="P1" library="SparkFun" package="PDB12" value="100KB" x="37" y="9" rot="R90"/>
-<element name="P2" library="SparkFun" package="PDB12" value="100KB" x="77" y="9" rot="R90"/>
-<element name="P3" library="SparkFun" package="PDB12" value="100KB" x="57" y="9" rot="R90"/>
+<element name="P1" library="SparkFun" package="PDB12" value="100KB" x="32" y="9" rot="R90"/>
+<element name="P2" library="SparkFun" package="PDB12" value="100KB" x="71" y="9" rot="R90"/>
+<element name="P3" library="SparkFun" package="PDB12" value="100KB" x="52" y="9" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -476,8 +476,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="90.73" y1="19.27" x2="90.68" y2="20.32" width="0.254" layer="1"/>
 <wire x1="90.68" y1="20.32" x2="90" y2="21" width="0.254" layer="1"/>
 <wire x1="90" y1="21" x2="82" y2="21" width="0.254" layer="1"/>
-<wire x1="82" y1="21" x2="82" y2="12.75" width="0.254" layer="1"/>
-<wire x1="82" y1="12.75" x2="79.75" y2="12.75" width="0.254" layer="1"/>
+<wire x1="82" y1="21" x2="81" y2="12.75" width="0.254" layer="1"/>
+<wire x1="81" y1="12.75" x2="79.75" y2="12.75" width="0.254" layer="1"/>
 <wire x1="79.75" y1="12.75" x2="76" y2="9" width="0.254" layer="1"/>
 <wire x1="76" y1="9" x2="68" y2="9" width="0.254" layer="1"/>
 <wire x1="68" y1="9" x2="64" y2="5" width="0.254" layer="1"/>
@@ -495,7 +495,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="COARSE">
 <contactref element="PIGGY" pad="5"/>
 <contactref element="P2" pad="2"/>
-<wire x1="82" y1="9" x2="82" y2="9.864" width="0.254" layer="1"/>
+<wire x1="81" y1="9" x2="82" y2="9.864" width="0.254" layer="1"/>
 <wire x1="82" y1="9.864" x2="87.122" y2="14.986" width="0.254" layer="1"/>
 <wire x1="87.122" y1="14.986" x2="91.694" y2="14.986" width="0.254" layer="1"/>
 <wire x1="91.694" y1="14.986" x2="92.964" y2="16.256" width="0.254" layer="1"/>

@@ -219,22 +219,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pad name="P$3" x="4.67" y="-0.01" drill="1.1"/>
 </package>
 <package name="PDB12">
-<pad name="2" x="0" y="-5" drill="1" shape="square"/>
-<pad name="3" x="3.75" y="-5" drill="1" shape="square"/>
-<pad name="1" x="-3.75" y="-5" drill="1" shape="square"/>
-<pad name="P$4" x="5.05" y="5" drill="2.7" shape="square" rot="R90"/>
-<pad name="P$5" x="-5.05" y="5" drill="2.7" shape="square" rot="R90"/>
-<wire x1="-7" y1="-6" x2="7" y2="-6" width="0.127" layer="21"/>
-<wire x1="7" y1="-6" x2="7" y2="12" width="0.127" layer="21"/>
-<wire x1="7" y1="12" x2="-7" y2="12" width="0.127" layer="21"/>
-<wire x1="-7" y1="12" x2="-7" y2="-6" width="0.127" layer="21"/>
-<text x="-3" y="9" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-5.08" y1="-6.35" x2="-7.62" y2="-6.35" width="0.2032" layer="51"/>
-<wire x1="-7.62" y1="-6.35" x2="-7.62" y2="11.43" width="0.2032" layer="51"/>
-<wire x1="-7.62" y1="11.43" x2="7.62" y2="11.43" width="0.2032" layer="51"/>
-<wire x1="7.62" y1="11.43" x2="7.62" y2="-6.35" width="0.2032" layer="51"/>
-<wire x1="7.62" y1="-6.35" x2="5.08" y2="-6.35" width="0.2032" layer="51"/>
+<pad name="2" x="0" y="-10" drill="1" shape="square"/>
+<pad name="3" x="3.75" y="-10" drill="1" shape="square"/>
+<pad name="1" x="-3.75" y="-10" drill="1" shape="square"/>
+<pad name="P$4" x="5.05" y="0" drill="2.7" shape="square" rot="R90"/>
+<pad name="P$5" x="-5.05" y="0" drill="2.7" shape="square" rot="R90"/>
+<wire x1="-7" y1="-11" x2="7" y2="-11" width="0.127" layer="21"/>
+<wire x1="7" y1="-11" x2="7" y2="7" width="0.127" layer="21"/>
+<wire x1="7" y1="7" x2="-7" y2="7" width="0.127" layer="21"/>
+<wire x1="-7" y1="7" x2="-7" y2="-11" width="0.127" layer="21"/>
+<text x="-3" y="4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-8" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-5.08" y1="-11.35" x2="-7.62" y2="-11.35" width="0.2032" layer="51"/>
+<wire x1="-7.62" y1="-11.35" x2="-7.62" y2="6.43" width="0.2032" layer="51"/>
+<wire x1="-7.62" y1="6.43" x2="7.62" y2="6.43" width="0.2032" layer="51"/>
+<wire x1="7.62" y1="6.43" x2="7.62" y2="-11.35" width="0.2032" layer="51"/>
+<wire x1="7.62" y1="-11.35" x2="5.08" y2="-11.35" width="0.2032" layer="51"/>
 </package>
 </packages>
 <symbols>
