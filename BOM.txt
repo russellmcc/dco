@@ -6,18 +6,18 @@ Connectors:
 3x erthenvar jacks
 
 Semiconductors
-1x QFN44     Atmel XMega A4U series processor (U1)
+1x QFP44     Atmel XMega 32A4U (TQFP)         (U1)
 1x SOT23     MMBT3904 NPN Transistor          (Q101)
 1x SOT223    MIC2920A-3.3BS regulator         (IC301)
 2x SOIC-8    LF353D op amp                    (IC101, IC201)
-2x SOD-123   5V zener diode                   (D301, D301)
+2x SOD-323   5V zener diode                   (D301, D301)
 
 Potentiometers
 3x PDB12 100K PCB mount panel pot (PDB12-H4251-104BF)
 1x 5mm   100K thru-hole trimpot (N6-L50T0C-100K)
 
 Resistors
-1x 0805 3.9  Resistor 5% (R102)
+1x 0805 1    Resistor 5% (R102)
 1x 0603 1K   Resistor 5% (R110)
 3x 0603 10K  Resistor 5% (R101, R107, R108)
 1x 0603 27K  Resistor 5% (R205)
