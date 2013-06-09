@@ -8,18 +8,18 @@
 </settings>
 <grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="16" fill="0" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="6" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -118,8 +118,8 @@
 <text x="58.42" y="8.636" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">Computer</text>
 <text x="58.42" y="6.35" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">Controlled</text>
 <text x="58.42" y="4.318" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">Oscillator</text>
-<text x="57.912" y="2.286" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">Alpha</text>
-<text x="42.926" y="12.7" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">Output Gain Adj.</text>
+<text x="58.42" y="2.286" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">Alpha 2</text>
+<text x="47.498" y="13.208" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">Output Gain Adj.</text>
 <wire x1="10.16" y1="3.048" x2="11.43" y2="3.556" width="0.254" layer="22"/>
 <wire x1="11.43" y1="3.556" x2="10.16" y2="4.064" width="0.254" layer="22"/>
 </plain>
@@ -858,19 +858,19 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="C102" library="SparkFun" package="1210" value=".1uF" x="26.67" y="16.51" smashed="yes">
-<attribute name="NAME" x="25.87" y="17.01" size="0.8128" layer="25"/>
+<attribute name="NAME" x="25.362" y="18.026" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="25.77" y="15.81" size="0.4064" layer="27"/>
 </element>
 <element name="R103" library="SparkFun" package="0603-RES" value="200K" x="22.86" y="12.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="24.511" y="11.938" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="24.257" y="14.224" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="23.876" y="13.843" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="Q101" library="SparkFun" package="SOT23" value="" x="22.86" y="20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="26.035" y="22.352" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="27.051" y="22.352" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="22.6695" y="21.336" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="C101" library="SparkFun" package="0603-CAP" value="220pF" x="15.24" y="20.574" smashed="yes">
-<attribute name="NAME" x="13.843" y="19.05" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="13.843" y="21.336" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="14.224" y="19.431" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="R102" library="SparkFun" package="0805" value="1" x="22.86" y="16.51" smashed="yes" rot="R90">
@@ -882,7 +882,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="25.654" y="11.303" size="0.4064" layer="27"/>
 </element>
 <element name="R104" library="SparkFun" package="0603-RES" value="100K" x="33.02" y="8.89" smashed="yes">
-<attribute name="NAME" x="31.623" y="7.366" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="35.56" y="6.985" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="32.004" y="7.747" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="R106" library="SparkFun" package="0603-RES" value="1M" x="33.02" y="7.112" smashed="yes" rot="R180">
@@ -890,23 +890,23 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="34.036" y="8.255" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="R105" library="SparkFun" package="0603-RES" value="100K" x="36.83" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.608" y="5.969" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="38.354" y="5.969" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="37.973" y="6.604" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R107" library="SparkFun" package="0603-RES" value="10K" x="29.21" y="12.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.48" y="10.795" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="28.702" y="9.017" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="30.353" y="11.684" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R108" library="SparkFun" package="0603-RES" value="10K" x="40.64" y="13.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="42.164" y="12.573" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="39.878" y="13.081" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="41.783" y="12.954" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R109" library="SparkFun" package="0603-RES" value="300K" x="34.29" y="19.05" smashed="yes">
-<attribute name="NAME" x="33.401" y="19.812" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="32.639" y="19.812" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="33.274" y="17.907" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="R110" library="SparkFun" package="0603-RES" value="1K" x="40.64" y="21.59" smashed="yes">
-<attribute name="NAME" x="38.989" y="22.352" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="38.989" y="20.066" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="39.624" y="20.447" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="P101" library="SparkFun" package="TRIM_POT_PTH" value="TRIMPOT 100K" x="39.42" y="17.95" smashed="yes" rot="MR90">
@@ -914,19 +914,19 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="39.42" y="21.125" size="0.6096" layer="28" rot="MR90"/>
 </element>
 <element name="TP101" library="SparkFun" package="1X01" value="" x="11.43" y="21.59" smashed="yes" rot="MR0">
-<attribute name="NAME" x="14.0462" y="18.8468" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="18.3642" y="20.6248" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="12.7" y="18.415" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="TP102" library="SparkFun" package="1X01" value="" x="26.67" y="20.32" smashed="yes" rot="MR0">
-<attribute name="NAME" x="28.5242" y="17.5768" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="29.5402" y="17.3228" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="27.94" y="17.145" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="TP105" library="SparkFun" package="1X01" value="" x="29.718" y="8.382" smashed="yes" rot="MR0">
-<attribute name="NAME" x="34.6202" y="9.9568" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="32.5882" y="5.6388" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="30.988" y="5.207" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="TP104" library="SparkFun" package="1X01" value="" x="26.67" y="10.16" smashed="yes" rot="MR0">
-<attribute name="NAME" x="24.7142" y="9.7028" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="28.0162" y="7.4168" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="27.94" y="6.985" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="R101" library="SparkFun" package="0603-RES" value="10K" x="19.05" y="21.59" smashed="yes" rot="R180">
@@ -934,7 +934,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="20.066" y="22.733" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="IC101" library="linear" package="SO08" value="LF353D" x="33.02" y="13.97" smashed="yes">
-<attribute name="NAME" x="35.941" y="14.605" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="29.337" y="18.415" size="0.8128" layer="25" rot="R270"/>
 <attribute name="VALUE" x="36.957" y="12.065" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R201" library="SparkFun" package="0603-RES" value="100K" x="44.45" y="13.97" smashed="yes" rot="R90">
@@ -954,7 +954,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="53.213" y="12.954" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="IC201" library="linear" package="SO08" value="LF353D" x="48.26" y="8.89" smashed="yes" rot="R90">
-<attribute name="NAME" x="46.101" y="6.477" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="46.609" y="5.715" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="50.165" y="12.827" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R206" library="SparkFun" package="0603-RES" value="100K" x="54.61" y="7.62" smashed="yes" rot="R90">
@@ -962,7 +962,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="55.753" y="6.604" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R205" library="SparkFun" package="0603-RES" value="27K" x="55.626" y="10.16" smashed="yes">
-<attribute name="NAME" x="57.531" y="9.652" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="54.483" y="10.922" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="54.61" y="9.017" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="R208" library="SparkFun" package="0603-RES" value="33K" x="41.91" y="10.16" smashed="yes" rot="R180">
@@ -970,40 +970,40 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="42.926" y="11.303" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="R207" library="SparkFun" package="0603-RES" value="51K" x="48.26" y="2.54" smashed="yes">
-<attribute name="NAME" x="46.609" y="0.762" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="46.609" y="1.016" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="47.244" y="1.397" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="R209" library="SparkFun" package="0603-RES" value="33K" x="40.64" y="7.62" smashed="yes">
-<attribute name="NAME" x="39.497" y="6.096" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="41.656" y="3.937" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="39.624" y="6.477" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="IC301" library="SparkFun" package="SOT223" value="" x="24.13" y="3.81" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.1295" y="-0.0635" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="26.2255" y="8.1915" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="24.3205" y="2.7305" size="0.4064" layer="27" rot="R90"/>
 </element>
 <element name="C301" library="SparkFun" package="0805" value="1uF" x="30.48" y="1.27" smashed="yes" rot="R180">
-<attribute name="NAME" x="31.242" y="0.4445" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="35.052" y="2.2225" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="31.496" y="2.667" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="C302" library="SparkFun" package="0603-CAP" value=".1uF" x="38.1" y="11.43" smashed="yes">
-<attribute name="NAME" x="36.703" y="9.906" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="37.719" y="9.906" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="37.084" y="10.287" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="C303" library="SparkFun" package="0603-CAP" value=".1uF" x="48.26" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="49.911" y="4.318" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="49.276" y="6.223" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="D301" library="SparkFun" package="SOD-323" value="5V" x="57.912" y="17.526" smashed="yes" rot="R270">
-<attribute name="NAME" x="56.642" y="16.129" size="0.8128" layer="25" rot="R270"/>
-<attribute name="VALUE" x="56.515" y="18.542" size="0.4064" layer="27" rot="R270"/>
+<element name="D301" library="SparkFun" package="SOD-323" value="5V" x="57.912" y="17.272" smashed="yes" rot="R270">
+<attribute name="NAME" x="56.134" y="17.399" size="0.8128" layer="25" rot="R270"/>
+<attribute name="VALUE" x="56.515" y="18.288" size="0.4064" layer="27" rot="R270"/>
 </element>
-<element name="D302" library="SparkFun" package="SOD-323" value="5V" x="54.61" y="17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="53.848" y="22.225" size="0.8128" layer="25" rot="R270"/>
-<attribute name="VALUE" x="56.007" y="16.764" size="0.4064" layer="27" rot="R90"/>
+<element name="D302" library="SparkFun" package="SOD-323" value="5V" x="54.864" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="54.102" y="22.225" size="0.8128" layer="25" rot="R270"/>
+<attribute name="VALUE" x="56.261" y="16.764" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="R301" library="SparkFun" package="0603-RES" value="100K" x="57.15" y="20.828" smashed="yes" rot="R90">
-<attribute name="NAME" x="56.388" y="17.907" size="0.8128" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="58.293" y="19.812" size="0.4064" layer="27" font="vector" rot="R90"/>
+<element name="R301" library="SparkFun" package="0603-RES" value="100K" x="57.404" y="20.828" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.928" y="19.431" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="58.547" y="19.812" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R302" library="SparkFun" package="0603-RES" value="100K" x="55.88" y="13.716" smashed="yes" rot="R270">
 <attribute name="NAME" x="54.356" y="15.875" size="0.8128" layer="25" font="vector" rot="R270"/>
@@ -1014,23 +1014,26 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="16.272" y="14.555" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C305" library="SparkFun" package="0603-CAP" value=".1uF" x="7.62" y="5.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.128" y="6.477" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="9.144" y="3.429" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="8.763" y="4.064" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="H1" library="Batten" package="AVR_ISP_6" value="PDI" x="15.24" y="2.54" smashed="yes" rot="MR270"/>
 <element name="POWER" library="eurorack" package="POWER_16" value="POWER_SIMPLE16" x="3.81" y="13.97" smashed="yes" rot="MR270">
 <attribute name="NAME" x="8.255" y="7.874" size="1.27" layer="26" ratio="10" rot="MR270"/>
 </element>
-<element name="J3" library="SparkFun" package="2X4" value="" x="48.26" y="19.05" smashed="yes">
-<attribute name="NAME" x="42.799" y="19.304" size="0.8128" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="43.18" y="14.605" size="1.27" layer="27"/>
+<element name="J3" library="SparkFun" package="2X4" value="" x="48.514" y="19.05" smashed="yes">
+<attribute name="NAME" x="43.053" y="19.304" size="0.8128" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="43.434" y="14.605" size="1.27" layer="27"/>
 </element>
 <element name="C304" library="SparkFun" package="1206" value="10uF" x="31.75" y="4.572" smashed="yes">
-<attribute name="NAME" x="30.48" y="5.715" size="0.8128" layer="25"/>
+<attribute name="NAME" x="30.734" y="2.667" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="30.353" y="3.048" size="0.4064" layer="27"/>
 </element>
-<element name="U$1" library="SparkFun" package="OSHW-LOGO-L" value="" x="55.626" y="13.462" rot="MR0"/>
-<element name="TP103" library="SparkFun" package="1X01" value="" x="22.606" y="10.414"/>
+<element name="U$1" library="SparkFun" package="OSHW-LOGO-L" value="" x="14.986" y="15.24" rot="MR0"/>
+<element name="TP103" library="SparkFun" package="1X01" value="" x="22.606" y="10.414" smashed="yes" rot="MR0">
+<attribute name="NAME" x="20.9042" y="9.9568" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="23.876" y="7.239" size="1.27" layer="28" rot="MR0"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1075,10 +1078,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R103" pad="2"/>
 <contactref element="U1" pad="7"/>
 <contactref element="TP103" pad="1"/>
-<wire x1="22.606" y1="10.414" x2="22.606" y2="12.104" width="0.254" layer="1"/>
-<wire x1="22.606" y1="12.104" x2="22.01" y2="12.7" width="0.254" layer="1"/>
 <wire x1="19.77" y1="13.5" x2="21.21" y2="13.5" width="0.254" layer="1"/>
 <wire x1="21.21" y1="13.5" x2="22.01" y2="12.7" width="0.254" layer="1"/>
+<wire x1="22.01" y1="12.7" x2="22.01" y2="11.01" width="0.254" layer="1"/>
+<wire x1="22.01" y1="11.01" x2="22.606" y2="10.414" width="0.254" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="Q101" pad="2"/>
@@ -1184,7 +1187,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="OUT">
 <contactref element="R110" pad="2"/>
 <contactref element="J3" pad="2"/>
-<wire x1="44.45" y1="20.32" x2="42.926" y2="21.844" width="0.254" layer="1"/>
+<wire x1="44.704" y1="20.32" x2="42.926" y2="21.844" width="0.254" layer="1"/>
 <wire x1="42.926" y1="21.844" x2="41.744" y2="21.844" width="0.254" layer="1"/>
 <wire x1="41.744" y1="21.844" x2="41.49" y2="21.59" width="0.254" layer="1"/>
 </signal>
@@ -1228,35 +1231,35 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="CV_IN">
 <contactref element="R201" pad="2"/>
 <contactref element="J3" pad="1"/>
-<wire x1="44.45" y1="14.82" x2="44.45" y2="17.78" width="0.254" layer="1"/>
+<wire x1="44.45" y1="14.82" x2="44.704" y2="17.78" width="0.254" layer="1"/>
 </signal>
 <signal name="AUX_IN">
 <contactref element="R202" pad="2"/>
 <contactref element="J3" pad="3"/>
-<wire x1="46.99" y1="17.78" x2="46.99" y2="14.82" width="0.254" layer="1"/>
+<wire x1="47.244" y1="17.78" x2="46.99" y2="14.82" width="0.254" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="D301" pad="1"/>
 <contactref element="R301" pad="2"/>
 <contactref element="J3" pad="4"/>
-<wire x1="46.99" y1="20.32" x2="46.99" y2="21.336" width="0.254" layer="1"/>
+<wire x1="47.244" y1="20.32" x2="46.99" y2="21.336" width="0.254" layer="1"/>
 <wire x1="46.99" y1="21.336" x2="47.752" y2="22.098" width="0.254" layer="1"/>
 <wire x1="47.752" y1="22.098" x2="56.896" y2="22.098" width="0.254" layer="1"/>
 <wire x1="56.896" y1="22.098" x2="56.896" y2="22.01" width="0.254" layer="1"/>
-<wire x1="56.896" y1="22.01" x2="57.15" y2="21.678" width="0.254" layer="1"/>
-<wire x1="57.15" y1="21.678" x2="57.57" y2="21.678" width="0.254" layer="1"/>
-<wire x1="57.57" y1="21.678" x2="58.166" y2="21.082" width="0.254" layer="1"/>
-<wire x1="58.166" y1="21.082" x2="58.166" y2="18.93" width="0.254" layer="1"/>
-<wire x1="58.166" y1="18.93" x2="57.912" y2="18.676" width="0.254" layer="1"/>
+<wire x1="56.896" y1="22.01" x2="57.404" y2="21.678" width="0.254" layer="1"/>
+<wire x1="57.404" y1="21.678" x2="58.332" y2="21.678" width="0.254" layer="1"/>
+<wire x1="58.332" y1="21.678" x2="58.674" y2="21.336" width="0.254" layer="1"/>
+<wire x1="58.674" y1="21.336" x2="58.674" y2="19.184" width="0.254" layer="1"/>
+<wire x1="58.674" y1="19.184" x2="57.912" y2="18.422" width="0.254" layer="1"/>
 </signal>
 <signal name="-5V">
 <contactref element="J3" pad="8"/>
 <contactref element="D302" pad="2"/>
 <contactref element="R302" pad="1"/>
-<wire x1="52.07" y1="20.32" x2="53.22" y2="20.32" width="0.254" layer="1"/>
-<wire x1="53.22" y1="20.32" x2="54.61" y2="18.93" width="0.254" layer="1"/>
+<wire x1="52.324" y1="20.32" x2="53.22" y2="20.32" width="0.254" layer="1"/>
+<wire x1="53.22" y1="20.32" x2="54.864" y2="18.93" width="0.254" layer="1"/>
 <wire x1="55.88" y1="14.566" x2="55.88" y2="17.66" width="0.254" layer="1"/>
-<wire x1="55.88" y1="17.66" x2="54.61" y2="18.93" width="0.254" layer="1"/>
+<wire x1="55.88" y1="17.66" x2="54.864" y2="18.93" width="0.254" layer="1"/>
 </signal>
 <signal name="N$17">
 <contactref element="IC201" pad="1"/>
@@ -1397,10 +1400,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="42.164" y1="5.08" x2="39.37" y2="5.08" width="0.254" layer="16"/>
 <via x="39.37" y="5.08" extent="1-16" drill="0.508"/>
 <wire x1="39.37" y1="5.08" x2="38.1" y2="5.08" width="0.254" layer="1"/>
-<wire x1="57.15" y1="19.978" x2="55.46" y2="19.978" width="0.254" layer="1"/>
-<wire x1="55.46" y1="19.978" x2="55.118" y2="20.32" width="0.254" layer="1"/>
-<via x="55.118" y="20.32" extent="1-16" drill="0.508"/>
-<wire x1="55.118" y1="20.32" x2="55.118" y2="15.748" width="0.254" layer="16"/>
+<wire x1="57.404" y1="19.978" x2="55.46" y2="19.978" width="0.254" layer="1"/>
+<wire x1="55.46" y1="19.978" x2="55.88" y2="20.828" width="0.254" layer="1"/>
+<via x="55.88" y="20.828" extent="1-16" drill="0.508"/>
+<wire x1="55.88" y1="20.828" x2="55.118" y2="15.748" width="0.254" layer="16"/>
 <wire x1="55.118" y1="15.748" x2="55.626" y2="15.24" width="0.254" layer="16"/>
 <wire x1="55.626" y1="15.24" x2="55.626" y2="14.224" width="0.254" layer="16"/>
 <wire x1="55.626" y1="14.224" x2="54.356" y2="12.954" width="0.254" layer="16"/>
@@ -1508,12 +1511,12 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="COARSE">
 <contactref element="R203" pad="2"/>
 <contactref element="J3" pad="5"/>
-<wire x1="49.53" y1="14.82" x2="49.53" y2="17.78" width="0.254" layer="1"/>
+<wire x1="49.53" y1="14.82" x2="49.784" y2="17.78" width="0.254" layer="1"/>
 </signal>
 <signal name="FINE">
 <contactref element="R204" pad="2"/>
 <contactref element="J3" pad="7"/>
-<wire x1="52.07" y1="14.82" x2="52.07" y2="17.78" width="0.254" layer="1"/>
+<wire x1="52.07" y1="14.82" x2="52.324" y2="17.78" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>
