@@ -118,7 +118,7 @@
 <text x="58.42" y="8.636" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">Computer</text>
 <text x="58.42" y="6.35" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">Controlled</text>
 <text x="58.42" y="4.318" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">Oscillator</text>
-<text x="58.42" y="2.286" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">Alpha 2</text>
+<text x="58.42" y="2.286" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">Alpha 3</text>
 <text x="47.498" y="13.208" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">Output Gain Adj.</text>
 <wire x1="10.16" y1="3.048" x2="11.43" y2="3.556" width="0.254" layer="22"/>
 <wire x1="11.43" y1="3.556" x2="10.16" y2="4.064" width="0.254" layer="22"/>

@@ -603,7 +603,7 @@ Standard 8.5x11 US Letter frame</description>
 <instance part="P2" gate="G$1" x="78.74" y="81.28"/>
 <instance part="GND2" gate="1" x="78.74" y="66.04"/>
 <instance part="P+1" gate="1" x="78.74" y="96.52"/>
-<instance part="P3" gate="G$1" x="68.58" y="81.28" rot="R180"/>
+<instance part="P3" gate="G$1" x="68.58" y="81.28"/>
 <instance part="P-1" gate="1" x="68.58" y="66.04"/>
 </instances>
 <busses>
@@ -697,11 +697,11 @@ Standard 8.5x11 US Letter frame</description>
 <pinref part="P2" gate="G$1" pin="E"/>
 <wire x1="78.74" y1="88.9" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<pinref part="P3" gate="G$1" pin="A"/>
 <wire x1="78.74" y1="91.44" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="88.9" x2="68.58" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
 <junction x="78.74" y="91.44"/>
+<pinref part="P3" gate="G$1" pin="E"/>
+<wire x1="68.58" y1="91.44" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-5V" class="0">
@@ -711,7 +711,7 @@ Standard 8.5x11 US Letter frame</description>
 <label x="63.5" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="P3" gate="G$1" pin="E"/>
+<pinref part="P3" gate="G$1" pin="A"/>
 <pinref part="P-1" gate="1" pin="-5V"/>
 <wire x1="68.58" y1="73.66" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
 </segment>
@@ -736,7 +736,7 @@ Standard 8.5x11 US Letter frame</description>
 </segment>
 <segment>
 <pinref part="P3" gate="G$1" pin="S"/>
-<wire x1="63.5" y1="81.28" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="81.28" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
 <label x="55.88" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
