@@ -2725,8 +2725,8 @@ Based on the following sources:&lt;p&gt;
 <part name="D301" library="SparkFun" deviceset="DIODE-ZENER" device="-BZT52" value="5V"/>
 <part name="D302" library="SparkFun" deviceset="DIODE-ZENER" device="-BZT52" value="5V"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="R301" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="100K"/>
-<part name="R302" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="100K"/>
+<part name="R301" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
+<part name="R302" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
 <part name="P-4" library="supply1" deviceset="-12V" device=""/>
 <part name="P-5" library="supply1" deviceset="-5V" device=""/>
