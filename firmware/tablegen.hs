@@ -13,33 +13,26 @@ import Control.Arrow
 cpuFreq ∷ Double
 cpuFreq = 32000000
 
---prescales = [1,2,4,8,256,1024]
-prescales = [8]
-prescaleStr p = "TC_CLKSEL_DIV" ++ show p ++ "_gc"
-
-newtype PlainString = PlainString String deriving (Ord, Eq)
-instance Show PlainString where
-  show (PlainString s) = s
-
 maxScaledPeriod = 0x10000
-
-ratDiv ∷ Integer → Integer → Rational
-ratDiv = (/) `on` fromInteger
 
 periodForFreq ∷ Double → Double
 periodForFreq f = cpuFreq / f
 
-scaledPeriod ∷ Double → Integer → (Integer, Int)
-scaledPeriod p s = (s, round $ (p / (fromIntegral s)))
-
-scaledPeriods f = scaledPeriod <$> pure (periodForFreq f) <*> prescales
-
-bestScaledPeriod = second (-1 +) . head . mfilter ((maxScaledPeriod >) . snd) . scaledPeriods
+periodRegsForFreq ∷ Double → (Integer, Integer, Double)
+periodRegsForFreq f = (hi, lo, eff)
+  where
+    p = round $ periodForFreq f
+    cDiv x y = ceiling $ ((/) `on` fromIntegral) x y
+    hi' = if (p `mod` maxScaledPeriod) == 0 then (p `quot` maxScaledPeriod) - 1 else p `cDiv` maxScaledPeriod
+    lo = (round (((/) `on` fromIntegral) p hi')) - 1
+    hi = hi' - 1
+    eff = cpuFreq / (((*) `on` fromIntegral) (hi + 1) (lo + 1))
 
 -- in cents
-freqError f = (1200 * abs (logBase 2 (effF / f)), effF, f, bestScaledPeriod f)
+freqError f = (1200 * abs (logBase 2 (effF / f)), hi, lo, f)
   where
-    effF = cpuFreq / (fromIntegral (snd $ bestScaledPeriod f)) / (fromIntegral (fst $ bestScaledPeriod f))
+    (hi, lo, effF) = periodRegsForFreq f
+
 -- just use linear interpolation for the amplitude.
 amp ∷ Double → Int
 amp = round . amp'
@@ -66,11 +59,11 @@ showCList l = "{" ++ (help l) ++ "}"
 
 printCCode l = "// max error: " ++ (show (maximum (fth' <$> l))) ++
                "\nconst uint16_t kAmps[] PROGMEM = " ++ (showCList $ fst' <$> l) ++ ";\n" ++
-               "\nconst uint8_t kScales[] PROGMEM = " ++ (showCList $ snd' <$> l) ++ ";\n" ++
-               "\nconst uint16_t kPeriods[] PROGMEM = " ++ (showCList $ thd' <$> l) ++ ";\n"
+               "\nconst uint16_t kHi[] PROGMEM = " ++ (showCList $ snd' <$> l) ++ ";\n" ++
+               "\nconst uint16_t kLo[] PROGMEM = " ++ (showCList $ thd' <$> l) ++ ";\n"
 
-allData f = j (amp f) (bestScaledPeriod f) (freqError f)
-  where j a (p, s) e = (a, prescaleStr p, s, e)
+allData f = j (amp f) (periodRegsForFreq f) (freqError f)
+  where j a (hi, lo, _) e = (a, hi, lo, e)
 
 -- from schem
 voltageScale = 33/51
