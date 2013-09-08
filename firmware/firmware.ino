@@ -5,7 +5,7 @@
 uint32_t running_average; //1.15 format
 
 // optional lowpass filter
-const float alphaFloat = 1;
+const float alphaFloat = 0;
 const uint32_t alpha = 0xFFFF * alphaFloat; //0.16
 const uint32_t oneMinusAlpha = 0xFFFF * (1 - alphaFloat); //0.16
 
@@ -69,7 +69,12 @@ void UpdateTimers(uint16_t input)
          (TCC1.CTRLGSET & (TC1_PERBV_bm))){}
   TCC0.PERBUF = period;
   TCC0.CCDBUF = period >> 2;
+  TCC1.CTRLFSET = TC1_LUPD_bm;
   TCC1.PERBUF = preScale;
+
+  while (TCC0.CTRLGSET & TC0_PERBV_bm){}
+  TCC1.CTRLFCLR = TC1_LUPD_bm;
+
 }
 
 void loop()

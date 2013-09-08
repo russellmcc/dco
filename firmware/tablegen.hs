@@ -24,8 +24,9 @@ periodRegsForFreq f = (hi, lo, eff)
     p = round $ periodForFreq f
     cDiv x y = ceiling $ ((/) `on` fromIntegral) x y
     hi' = if (p `mod` maxScaledPeriod) == 0 then (p `quot` maxScaledPeriod) - 1 else p `cDiv` maxScaledPeriod
-    lo = (round (((/) `on` fromIntegral) p hi')) - 1
-    hi = hi' - 1
+    hi'' = max 2 hi'
+    lo = (round (((/) `on` fromIntegral) p hi'')) - 1
+    hi = hi'' - 1
     eff = cpuFreq / (((*) `on` fromIntegral) (hi + 1) (lo + 1))
 
 -- in cents
