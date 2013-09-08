@@ -15,8 +15,15 @@ cpuFreq = 32000000
 
 maxScaledPeriod = 0x10000
 
+-- if this is 1200, no correction will occur.
+-- set this to what the apparent cents per octave is
+-- with this set to 1200.  The correction will occur.
+centsPerOctaveCorrection = 1185
+
 periodForFreq ∷ Double → Double
-periodForFreq f = cpuFreq / f
+periodForFreq f = cpuFreq / (doCorrect f)
+  where
+    doCorrect f = 2 ** ((logBase 2 f) * (1200 / centsPerOctaveCorrection))
 
 periodRegsForFreq ∷ Double → (Integer, Integer, Double)
 periodRegsForFreq f = (hi, lo, eff)

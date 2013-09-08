@@ -5,7 +5,8 @@
 uint32_t running_average; //1.15 format
 
 // optional lowpass filter
-const float alphaFloat = 0;
+const float alphaFloat = 0;  // CHANGE THIS TO ADD PORTAMENTO/TUNING STABILITY.
+                             // higher the value, more portamento and more stability.
 const uint32_t alpha = 0xFFFF * alphaFloat; //0.16
 const uint32_t oneMinusAlpha = 0xFFFF * (1 - alphaFloat); //0.16
 
